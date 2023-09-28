@@ -18,17 +18,9 @@ section {
     color: rgb(255, 255, 255);
 }
 
-<<<<<<< HEAD
-.card {
-=======
-.custom-tooltip .tooltip {
-  border: none !important;
-  box-shadow: none !important;
-}
 
-  
-  .card {
->>>>>>> f256d49a81f6ee78d0b81208908658672a161448
+.card {
+
     padding-top: 20px;
     padding-bottom: 5px;
     display: flex;
