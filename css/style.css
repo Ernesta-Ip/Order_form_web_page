@@ -1,0 +1,105 @@
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dropdown-menu {
+    border: none; 
+    box-shadow: none; 
+}
+
+.btn-custom {
+    background-color: rgb(13, 110, 215);
+    color: rgb(255, 255, 255);
+}
+
+.btn-custom:hover {
+    background-color: rgb(11, 94, 215);
+    color: rgb(255, 255, 255);
+}
+
+<<<<<<< HEAD
+.card {
+=======
+.custom-tooltip .tooltip {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+  
+  .card {
+>>>>>>> f256d49a81f6ee78d0b81208908658672a161448
+    padding-top: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+     
+.card-body {
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.col-narrow {
+    width: 30px; /* Adjust the width as per your preference */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+    
+.button-container {
+    margin-top: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+ 
+.img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+card {
+    width: 20px;
+    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    object-fit: contain;
+}
+
+header {
+    background-color: rgb(161, 161, 161);
+}
+
+btn-primary-white{
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+  --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+  --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+}
+
+icon-button {
+        background-image: url(icon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 12px;
+}
+
+btn {
+    margin-left:100px;
+    margin-right: 100px;
+}

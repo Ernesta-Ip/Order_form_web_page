@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-xxl">
+          <a class="navbar-brand" href="#" style="font-style:normal;">ComputerFactory</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Delivery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Shops</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                  </li>
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search items" aria-label="Search">
+                  <button class="btn btn-custom" type="submit">Search</button>
+                </form>          
+                <button type="button" class="btn btn-default btn-sm">  
+                  <span class="glyphicon glyphicon-shopping-cart">  
+                  </span> 
+                  <img src="img/basket-svgrepo-com.svg" alt="" width="20">
+                </button>  
+                <button type="button" class="btn btn-default btn-sm">  
+                    <span class="glyphicon glyphicon-shopping-cart">  
+                    </span> 
+                    <img src="img/account-svgrepo-com.svg" alt="" width="20">
+                  </button>  
+              </div>
+            </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="container-xxl">
+          <nav class="nav nav-pills flex-column flex-sm-row">
+            <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">PC Components</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Hard Drives</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Network Hardware</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Drivers</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Cable</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Cooling</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Controllers</a>
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="otherDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other</a>
+                  <div class="dropdown-menu" aria-labelledby="otherDropdown">
+                      <a class="dropdown-item" href="#">Cases and Modding</a>
+                      <a class="dropdown-item" href="#">Accessories</a>
+                      <a class="dropdown-item" href="#">Power Supply</a>
+                      <a class="dropdown-item" href="#">Memory Cards</a>
+                      <a class="dropdown-item" href="#">Input Devices</a>
+                  </div>
+              </li>
+          </nav>
+      </div>
+    </section>
+  
+    <script>
+      $('.nav-link').on('click', function () {
+      $('.nav-link').removeClass('active');
+      $(this).addClass('active');
+    });
+  
+    
+    $(document).on('click', function () {
+      $('.dropdown-menu').hide();
+      $('.dropdown-toggle').removeClass('active');
+    });
+  
+   
+    $('.dropdown-toggle').on('click', function (event) {
+      event.stopPropagation();
+      var dropdownMenu = $(this).next('.dropdown-menu');
+      if (dropdownMenu.is(':visible')) {
+        dropdownMenu.hide();
+        $(this).removeClass('active'); 
+      } else {
+        
+        $('.dropdown-menu').hide();
+        $('.dropdown-toggle').removeClass('active');
+  
+        dropdownMenu.show();
+        $(this).addClass('active');
+      }
+    });
+    </script>
+ 
+    <section>
+  <div class="container-xxl">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">PC Components</a></li>
+        <li class="breadcrumb-item"><a href="#">Motherboards</a></li>
+      </ol>
+    </nav>
+  </div>
+    </section>
+
+    <section>
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <h2> 
+              ASUS WS X299 PRO/SE
+            </h2>
+            <img src="img/MainPic1.jpg" class="card-img-top" alt="Motherboard1">
+            
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <a href="link_to_card1_destination.html"> 
+                    <div class="card" style="width: 100%; height: 100px;">
+                      <img src="img/pic1.jpg" class="card-img-top" alt="Motherboard1" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="link_to_card2_destination.html"> 
+                    <div class="card" style="width: 100%; height: 100px;">
+                      <img src="img/pic2.jpg" class="card-img-top" alt="Motherboard2" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="link_to_card3_destination.html"> 
+                    <div class="card" style="width: 100%; height: 100px;">
+                      <img src="img/pic3.jpg" class="card-img-top" alt="Motherboard3" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col">
+              <p>
+<<<<<<< HEAD
+                <a href="#Customer-review" class="btn btn-default btn-sm custom-tooltip" data-toggle="tooltip" data-placement="right" title="This rating was based on 1 feedback from the user" style="border: none;">
+                  <span class="rating-stars"></span>
+                  <img src="img/stars.png" alt="" width="150">
+              </a>                      
+=======
+                <a href="#Customer-review" class="btn btn-default btn-sm custom-tooltip" data-toggle="tooltip" data-placement="right" title="This rating was based on 1 feedback from the user">
+                  <span class="rating-stars"></span>
+                  <img src="img/stars.png" alt="" width="150">
+              </a>
+                      
+>>>>>>> f256d49a81f6ee78d0b81208908658672a161448
+            </p>                             
+            <ul>
+                <li>ATX, Sockel 2066</li>
+                <li>Intel X299, 8x DDR4 up to 128 GB</li>
+                <li>CrossfireX, SLI</li>
+                <li>6x SATA3, 2x M.2, 2x GB-LAN</li>
+                <li>1x USB 3.1 Gen2 Typ C, 1x USB 3.1 Gen2, 6x USB 3.1 Gen1, 6x USB2.0</li>
+                <li>VGA, 1x U.2</li>
+            </ul>                                 
+            <p>
+                <small>Item No.:90718826, Manufacturer's no.:90SW00A0-M0EAY0</small>
+            </p>
+            <a class="icon-link icon-link-hover" href="#Detailed-information">
+                More information about the product
+                <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+            </a>         
+        </div>
+        
+
+<<<<<<< HEAD
+        <div class="col">
+=======
+          <div class="col">
+>>>>>>> f256d49a81f6ee78d0b81208908658672a161448
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <img src="img/ASUS.jpg" alt="Asus" width="150">
+              </li>
+              <li class="list-group-item">
+                <h2>
+                  405,95€
+                </h2>
+                incl. VAT
+              </li>
+              <li class="list-group-item">
+                <h5 style="color: rgb(41, 87, 255);"> Free shipping </h5>
+                <p style="color:rgb(44, 44, 44); font-style: italic;">Up to 2 business days</p>
+              </li>
+              <li class="list-group-item">In stock and immediately available</li>
+              <div class="d-grid gap-2">
+                <button class="btn btn-custom" type="button">Add to shopping cart</button>
+                <button class="btn btn-secondary" type="button">Add to favourites</button>
+              </div>
+            </li>
+            <li class="list-group-item" style="text-align: center;">
+               <a class="icon-link icon-link-hover" href="#">
+                Compare with other products
+                <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+              </a>
+            </li>
+            </ul>        
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Detailed-information">
+      <div class="container-xxl"> 
+        <h2>
+          Detailed information
+        </h2>
+        <p>
+          With optimized trace paths for time-aligned signaling and minimal crosstalk, third-generation ASUS T-Topology offers enhanced memory stability and compatibility, allowing support for memory speeds of DDR4-4133MHz and beyond.
+          WS X299 PRO/SE includes a dedicated base-clock (BCLK) generator that extends CPU and memory overclocking margins. This custom solution works in tandem with the TPU to enhance voltage and BCLK overclocking control, providing the flexibility to extract every ounce of performance from the Intel Core X-series processors.
+        </p>
+        <div class="hidden-content" style="display: none;"> 
+          <ul>
+            <li>
+              Make your memory go faster
+              With optimized trace paths for time-aligned signaling and minimal crosstalk, third-generation ASUS T-Topology offers enhanced memory stability and compatibility, allowing support for memory speeds of DDR4-4133MHz and beyond.
+            </li>
+            <li>
+              OC design - ASUS PRO clock II technology
+              WS X299 PRO/SE includes a dedicated base-clock (BCLK) generator that extends CPU and memory overclocking margins. This custom solution works in tandem with the TPU to enhance voltage and BCLK overclocking control, providing the flexibility to extract every ounce of performance from the Intel Core X-series processors.
+            </li>
+            <li>
+              Ultra-efficient VRM heatsink
+              Designed for the powerful Intel Core X-series processor with up to 18 cores, WS X299 PRO/SE features a capable thermal design to ensure maximum performance with no CPU throttling. Consisting of an ultra-efficient VRM heatsink with a metal fin array design that maximizes surface area for heat dissipation, plus two additional heatsinks and a connecting heatpipe to further increase cooling performance, this innovative thermal design ensures WS X299 PRO/SE is always ready to handle any task, no matter how demanding.
+            </li>
+          </ul>
+        </div>        
+        <div class="d-grid gap-2">
+          <button class="btn btn-custom" type="button" id="toggle-button">Read more</button>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      document.getElementById("toggle-button").addEventListener("click", function() {
+        var hiddenContent = document.querySelector(".hidden-content");
+        if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
+          hiddenContent.style.display = "block";
+          document.getElementById("toggle-button").textContent = "Read less";
+        } else {
+          hiddenContent.style.display = "none";
+          document.getElementById("toggle-button").textContent = "Read more";
+        }
+      });
+    </script>    
+
+<<<<<<< HEAD
+    <section id="Customer-review">
+=======
+<section id="Customer-review">
+>>>>>>> f256d49a81f6ee78d0b81208908658672a161448
+    <div class="container-xxl">
+      <h2> 
+        Customer Review
+      </h2>
+      <img src="img/stars.png" alt=""width=70px >
+      <h5>
+        Not bad option
+      </h5>
+      <h6> From: William Black</h6>
+      <p>
+       Pro: cheap.
+       Cons: Doesn't always work 
+      </p> 
+      <div class="d-grid gap-2">
+        <button class="btn btn-custom" type="button" id="toggle-button">View more reviews</button>
+      </div>
+     </div>
+    </section>
+
+<<<<<<< HEAD
+    <section>
+=======
+
+
+<section>
+>>>>>>> f256d49a81f6ee78d0b81208908658672a161448
+    <div class="container-xxl">
+      <h2>Other customers also bought</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img src="img/MB1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+              <h6 class="card-text">ASUS TUF GAMING Z790-PLUS D4</h6>
+              <h2>245,75€</h2>
+              <a class="icon-link icon-link-hover" href="#">
+                More info
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/MB2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-text">ASUS PRIME B450M-A II</h6>
+              <h2>55,95€</h2>
+              <a class="icon-link icon-link-hover" href="#">
+                More info
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/MB3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-text">ASUS X299 SAGE/10G</h6>
+              <h2>600,85€</h2>
+              <a class="icon-link icon-link-hover" href="#">
+                More info
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+         </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/MB5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-text">GIGABYTE Z790 AORUS ELITE AX</h6>
+              <h2>279,95€</h2>
+              <a class="icon-link icon-link-hover" href="#">
+                More info
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-narrow"> 
+           <div class="button-container">
+            <button type="button" class="btn btn-default btn-sm">  
+              <span class="glyphicon glyphicon-shopping-cart"></span> 
+              <img src="img/icon-arrow-right.svg" alt="" width="50">
+            </button>
+          </div>
+        </div>
+       </div>
+    </div>
+  </div>
+    </section>
+
+    <section> 
+    <div class="container-xxl">
+      <hr class="my-4">
+        <div class="row">
+        <div class="col">
+          <h5>
+            <strong>Customer Service</strong>
+          </h5>
+          <ul class="list-unstyled">
+            <li>Email: <a class="icon-link icon-link-hover" href="#Detailed-information">
+              info@computerfactory.com
+              <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+            </a>
+          </li>
+            <li>Telephone: <a class="icon-link icon-link-hover" href="#Detailed-information">
+              049155002230
+              <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+            </a> 
+          </li>
+            <li>You can reach us Monday to Friday from 10:00 a.m. to 5:00 p.m.</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5>
+            <strong>Jobs and Career</strong>
+          </h5>
+          <ul class="list-unstyled">
+            <li>We are looking for the new talents!</li>
+            <li>Send your application at 
+              <a class="icon-link icon-link-hover" href="#Detailed-information">
+                jobs@computerfactory.com
+                <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5>
+            <strong> Returns and Compliants</strong>
+          </h5>
+          <ul class="list-unstyled">
+            <li> Whether it's a cancellation or a defect - </li>
+            <li> use our returns assistant.</li>
+            <li> You can reach us at 
+              <a class="icon-link icon-link-hover" href="#Detailed-information">
+              compliants@computerfactory.com
+              <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+            </a>
+            </li>
+            <li>
+               or by phone 
+            <a class="icon-link icon-link-hover" href="#Detailed-information">
+              049155002235
+              <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+            </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5>
+            <strong>Sales and Partners</strong>
+          </h5>
+          <ul class="list-unstyled">
+            <li> Private: <a class="icon-link icon-link-hover" href="#Detailed-information">
+              049155002237
+              <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+            </a>
+          </li>
+            <li>Monday - Friday 8 am - 6 pm</li>
+            <li>Business: <a class="icon-link icon-link-hover" href="#Detailed-information">
+              049155002255
+              <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+            </a>
+          </li>
+            <li>Monday - Friday 8 am - 6 pm</li>
+          </ul>
+          </div>
+      </div>
+        <hr class="my-4">
+          <p><small>
+            All brand names, trademarks and all product images are the property of their rightful owners and are used here for description purposes only.
+            Packaging information refers to a "packaging unit" OVP information refers to "original packaging".
+          All prices mentioned here include 19% VAT and plus shipping costs of at least € 5.99*. All costs mentioned here include 19% VAT.
+           Use our midnight shopping and order with free shipping. 
+          </small> 
+          </p>
+          <p>
+            © 2023 by ComputerFactory GmbH
+          </p>
+      </div>
+    </section>
+
+  </body>
+</html>
